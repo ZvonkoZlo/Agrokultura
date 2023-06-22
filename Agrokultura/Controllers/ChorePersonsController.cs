@@ -49,9 +49,9 @@ namespace Agrokultura.Controllers
         // GET: ChorePersons/Create
         public IActionResult Create()
         {
-            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Id");
-            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Id");
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id");
+            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Name");
+            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Name");
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "FullName");
             return View();
         }
 
@@ -62,9 +62,9 @@ namespace Agrokultura.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Description,OrderStatusId,ChoreId,PersonId")] ChorePerson chorePerson)
         {
-            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Id", chorePerson.ChoreId);
-            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Id", chorePerson.OrderStatusId);
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id", chorePerson.PersonId);
+            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Name", chorePerson.ChoreId);
+            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Name", chorePerson.OrderStatusId);
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "FullName", chorePerson.PersonId);
          
                 _context.Add(chorePerson);
                 _context.SaveChanges();
@@ -86,9 +86,9 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Id", chorePerson.ChoreId);
-            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Id", chorePerson.OrderStatusId);
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id", chorePerson.PersonId);
+            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Name", chorePerson.ChoreId);
+            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Name", chorePerson.OrderStatusId);
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "FullName", chorePerson.PersonId);
             return View(chorePerson);
         }
 
@@ -124,9 +124,9 @@ namespace Agrokultura.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Id", chorePerson.ChoreId);
-            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Id", chorePerson.OrderStatusId);
-            ViewData["PersonId"] = new SelectList(_context.People, "Id", "Id", chorePerson.PersonId);
+            ViewData["ChoreId"] = new SelectList(_context.Chores, "Id", "Name", chorePerson.ChoreId);
+            ViewData["OrderStatusId"] = new SelectList(_context.OrderStatuses, "Id", "Name", chorePerson.OrderStatusId);
+            ViewData["PersonId"] = new SelectList(_context.People, "Id", "FullName", chorePerson.PersonId);
             return View(chorePerson);
         }
 

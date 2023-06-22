@@ -1,0 +1,73 @@
+﻿main {
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+
+.hero-text .display-1 {
+    color: #ecda49;
+    font-weight: 500;
+}
+
+.hero-text .display-4 {
+    color: white;
+}
+
+.dugme {
+    background-color: #4c7141;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #ecda49;
+    color: white;
+}
+
+.statistika {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.kartica {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #4c7141, #6f9665);
+}
+
+.inner {
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+.ikona {
+    margin-right: 15px;
+    font-size: 50px;
+}
+
+.home-tablica {
+    background-image: linear-gradient(to right, #4c7141, #6f9665) !important;
+    color: white;
+}

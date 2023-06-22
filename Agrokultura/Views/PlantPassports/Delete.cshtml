@@ -1,0 +1,55 @@
+﻿@model Agrokultura.Models.PlantPassport
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="col-update_create">
+    <h1>Izbrisati</h1>
+
+    <h3>Jeste li sigurni da želite ovo izbrisati?</h3>
+    <div>
+        <h4>Biljna putovnica</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Zemlja podrijetla: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CountryOfOrigin)
+            </dd>
+            <dt class="col-sm-2">
+                Datum izdavanja: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateOfIssue)
+            </dd>
+            <dt class="col-sm-2">
+                Tijelo za izdavanje: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IssuingAuthority)
+            </dd>
+            <dt class="col-sm-2">
+                Broj certifikata: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CertificateNumber)
+            </dd>
+            <dt class="col-sm-2">
+                Opis: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <div class="btn back-to-list">
+                <a href="javascript:history.back()">Natrag</a>
+            </div>
+            <input type="submit" value="Izbrisati" class="btn edit-data-btn delete-btn" />
+        </form>
+    </div>
+</div>

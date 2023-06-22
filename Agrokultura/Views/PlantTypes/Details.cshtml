@@ -4,27 +4,30 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji Vrste biljke:</h1>
 
-<div>
-    <h4>PlantType</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+        <dl class="row form-group-update_create">
+        <dt class = "col-sm-4"">
+            Naziv:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+        <dt class = "col-sm-4">
+            Opis:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Description)
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+        <div class="btn edit-data-btn">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+        </div>
+        <div class="btn back-to-list">
+            <a href="javascript:history.back()">Natrag</a>
+        </div>
+    </div>
 </div>

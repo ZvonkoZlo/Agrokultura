@@ -55,7 +55,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] GoodsType goodsType)
+        public async Task<IActionResult> Create([Bind("Id,Name,MeasurementUnit,Quantity")] GoodsType goodsType)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] GoodsType goodsType)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MeasurementUnit,Quantity")] GoodsType goodsType)
         {
             if (id != goodsType.Id)
             {

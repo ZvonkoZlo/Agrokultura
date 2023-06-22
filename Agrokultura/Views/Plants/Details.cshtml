@@ -4,63 +4,72 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji biljke</h1>
 
-<div>
-    <h4>Plant</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+        <dl class="row form-group-update_create">
+        <dt class = "col-sm-4">
+            Naziv:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+        <dt class = "col-sm-4">
+            Opis:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Description)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SubspeciesName)
+        <dt class = "col-sm-4">
+            Naziv podvrste:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.SubspeciesName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfGoods)
+        <dt class = "col-sm-4">
+            Količina dobara koje biljka u prosjeku daje :
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AmountOfGoods)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.AmountOfGoods) kg/kom
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
+        <dt class = "col-sm-4">
+            Cijena:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Price) KM
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.GoodsType)
+        <dt class = "col-sm-4">
+            Vrsta dobara:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.GoodsType.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.GoodsType.Name)
+          <a asp-controller="GoodsTypes" asp-action="Details" asp-route-id="@Model.GoodsType.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Manufacturer)
+        <dt class = "col-sm-4">
+            Proizvođač:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Manufacturer.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Manufacturer.FullName)
+          <a asp-controller="People" asp-action="Details" asp-route-id="@Model.Manufacturer.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PlantType)
+        <dt class = "col-sm-4">
+            Vrsta biljke:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PlantType.Id)
-        </dd>
+        <dd class = "col-sm-8">
+          @Html.DisplayFor(model => model.PlantType.Name)  
+          <a asp-controller="PlantTypes" asp-action="Details" asp-route-id="@Model.PlantType.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+      </dd>
+      
+                                                               
     </dl>
+    <div class="btn edit-data-btn">
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+    </div>
+    <div class="btn back-to-list">
+        <a href="javascript:history.back()">Natrag</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
 </div>

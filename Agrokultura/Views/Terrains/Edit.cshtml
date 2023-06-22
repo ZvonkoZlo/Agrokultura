@@ -4,38 +4,23 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Terrain</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Uredite teren:</h1>
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+            <div class="form-group form-group-update_create">
+                <label asp-for="Name" class="control-label">Naziv:</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="SunPersence" class="control-label"></label>
-                <input asp-for="SunPersence" class="form-control" />
-                <span asp-validation-for="SunPersence" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GroundSlope" class="control-label"></label>
-                <input asp-for="GroundSlope" class="form-control" />
-                <span asp-validation-for="GroundSlope" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group submit-update_create me-auto">
+                <input type="submit" value="Uredi!" class="btn" />
             </div>
         </form>
+        <div class="btn back-to-list">
+            <a asp-action="Index">Natrag</a>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

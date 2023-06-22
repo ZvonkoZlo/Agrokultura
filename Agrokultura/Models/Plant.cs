@@ -23,6 +23,8 @@ public partial class Plant
 
     public int? ManufacturerId { get; set; }
 
+    public string? Color { get; set; }
+
     public virtual GoodsType? GoodsType { get; set; }
 
     public virtual ICollection<IncomeAndExpense> IncomeAndExpenses { get; set; } = new List<IncomeAndExpense>();
@@ -32,4 +34,5 @@ public partial class Plant
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
     public virtual PlantType? PlantType { get; set; }
+
 }

@@ -4,68 +4,107 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="table-responsive card card-modify">
+    <div class="index-header">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+        <div class="index-header-title">
+            <h2>Parcele</h2>
+        </div>
+        <div class="index-header-add">
+            <a asp-action="Create" class="btn add-record"><i class="fa-solid fa-plus"></i> Parcele</a>
+        </div>
+
+    </div>
+
+    <table class="table table-rounded table-striped table-hover table-modify table-borderless" id="table-goods">
+        <thead class="thead-modify">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Naziv
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Coordinates)
+                Tlo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Longitudes)
+               Nagib tla
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Corners)
+               Prisutnost sunca
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Ground)
+                Vlasnik
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Owner)
+                Vrsta terena
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Terrain)
+               Površina
             </th>
-            <th></th>
+                <th class="last_td">Info, Uredi, Obriši</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Coordinates)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Longitudes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Corners)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ground.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Owner.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Terrain.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ground.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroundSlope)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SunPresence)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Terrain.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlotArea)
+                </td>
+                    <td class="last_td">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-circle-info"></i></a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="icons-modify icons-modify-delete"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#table-goods').DataTable({
+            "language": {
+                "sEmptyTable": "Nema dostupnih podataka",
+                "sInfo": "Prikazano _START_ do _END_ od ukupno _TOTAL_ zapisa",
+                "sInfoEmpty": "Prikazano 0 do 0 od 0 zapisa",
+                "sInfoFiltered": "(filtrirano iz ukupno _MAX_ zapisa)",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Prikaži _MENU_ zapisa po stranici",
+                "sLoadingRecords": "Učitavanje...",
+                "sProcessing": "Obrada...",
+                "sSearch": "Pretraga:",
+                "sZeroRecords": "Nema rezultata",
+                "oPaginate": {
+                    "sFirst": "Prva",
+                    "sPrevious": "Prethodna",
+                    "sNext": "Sljedeća",
+                    "sLast": "Posljednja"
+                },
+                "oAria": {
+                    "sSortAscending": ": aktivirajte za sortiranje stupca uzlazno",
+                    "sSortDescending": ": aktivirajte za sortiranje stupca silazno"
+                }
+            }
+        });
+    });
+</script>

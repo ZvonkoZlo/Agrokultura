@@ -3,42 +3,38 @@
 @{
     ViewData["Title"] = "Create";
 }
+<style>
 
-<h1>Create</h1>
+</style>
 
-<h4>City</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Kreiraj novi grad!</h1>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           @* <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>*@
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+
+            <div class="form-group form-group-update_create">
+                <label asp-for="Name" class="control-label" >Naziv</label>
                 <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <span asp-validation-for="Name" class="text-danger validation-faled-text"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PostalCode" class="control-label"></label>
-                <input asp-for="PostalCode" class="form-control" />
+            <div class="form-group form-group-update_create">
+                <label asp-for="PostalCode" class="control-label">Poštanski broj</label>
+                <input asp-for="PostalCode" class="form-control" required data-val-required="Please enter the name."/>
                 <span asp-validation-for="PostalCode" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CountryId" class="control-label"></label>
-                <select asp-for="CountryId" class ="form-control" asp-items="ViewBag.CountryId"></select>
+            <div class="form-group form-group-update_create">
+                <label asp-for="CountryId" class="control-label">Država</label>
+                <select asp-for="CountryId" class="form-control" asp-items="ViewBag.CountryId" ><option value="" disabled selected>Odaberite državu</option></select>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group  submit-update_create me-auto">
+                <input type="submit" value="Kreiraj!" class="btn" />
             </div>
         </form>
+
+        <div class="btn back-to-list">
+            <a href="javascript:history.back()">Natrag</a>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

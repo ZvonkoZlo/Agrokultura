@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Agrokultura.Models.PlantPassport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="table-responsive card card-modify">
+    <div class="index-header">
+
+        <div class="index-header-title">
+            <h2>Putovnica biljaka</h2>
+        </div>
+        <div class="index-header-add">
+            <a asp-action="Create" class="btn add-record"><i class="fa-solid fa-plus"></i>  Dodaj novi!</a>
+        </div>
+
+    </div>
+
+    <table class="table table-rounded table-striped table-hover table-modify table-borderless" id="table-cities">
+        <thead class="thead-modify">
+        <tr>
+            <th>
+                    Zemlja podrijetla
+            </th>
+            <th>
+                Datum izdavanja
+            </th>
+            <th>
+                Izdavač
+            </th>
+            <th>
+                Broj certifikata
+            </th>
+            <th>
+                Opis
+            </th>
+                <th class="last_td">Info, Uredi, Obriši</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CountryOfOrigin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfIssue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssuingAuthority)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CertificateNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                    <td class="last_td">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-circle-info"></i></a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="icons-modify icons-modify-delete"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#table-cities').DataTable({
+            "language": {
+                "sEmptyTable": "Nema dostupnih podataka",
+                "sInfo": "Prikazano _START_ do _END_ od ukupno _TOTAL_ zapisa",
+                "sInfoEmpty": "Prikazano 0 do 0 od 0 zapisa",
+                "sInfoFiltered": "(filtrirano iz ukupno _MAX_ zapisa)",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Prikaži _MENU_ zapisa po stranici",
+                "sLoadingRecords": "Učitavanje...",
+                "sProcessing": "Obrada...",
+                "sSearch": "Pretraga:",
+                "sZeroRecords": "Nema rezultata",
+                "oPaginate": {
+                    "sFirst": "Prva",
+                    "sPrevious": "Prethodna",
+                    "sNext": "Sljedeća",
+                    "sLast": "Posljednja"
+                },
+                "oAria": {
+                    "sSortAscending": ": aktivirajte za sortiranje stupca uzlazno",
+                    "sSortDescending": ": aktivirajte za sortiranje stupca silazno"
+                }
+            }
+        });
+    });
+</script>

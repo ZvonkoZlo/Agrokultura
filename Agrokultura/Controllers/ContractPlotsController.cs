@@ -21,22 +21,27 @@ namespace Agrokultura.Controllers
         // GET: ContractPlots
         public async Task<IActionResult> Index()
         {
-            var agroContext = _context.ContractPlots.Include(c => c.Contract).Include(c => c.Plot);
-            return View(await agroContext.ToListAsync());
+            var contractPlots = await _context.ContractPlots
+                .Include(cp => cp.Contract)
+                .Include(cp => cp.Plot)
+                .ToListAsync();
+
+            return View(contractPlots);
         }
 
         // GET: ContractPlots/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.ContractPlots == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var contractPlot = await _context.ContractPlots
-                .Include(c => c.Contract)
-                .Include(c => c.Plot)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(cp => cp.Contract)
+                .Include(cp => cp.Plot)
+                .FirstOrDefaultAsync(cp => cp.Id == id);
+
             if (contractPlot == null)
             {
                 return NotFound();
@@ -54,11 +59,9 @@ namespace Agrokultura.Controllers
         }
 
         // POST: ContractPlots/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ContractId,PlotId")] ContractPlot contractPlot)
+        public async Task<IActionResult> Create([Bind("Id,ContractId,PlotId,MonthlyPayment,Price")] ContractPlot contractPlot)
         {
             if (ModelState.IsValid)
             {
@@ -66,6 +69,7 @@ namespace Agrokultura.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["ContractId"] = new SelectList(_context.Contracts, "Id", "Id", contractPlot.ContractId);
             ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", contractPlot.PlotId);
             return View(contractPlot);
@@ -84,17 +88,20 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["ContractId"] = new SelectList(_context.Contracts, "Id", "Id", contractPlot.ContractId);
-            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", contractPlot.PlotId);
+
+            // Populate the ViewBag.Contracts with the list of contracts
+            ViewBag.Contracts = new SelectList(_context.Contracts, "Id", "Name", contractPlot.ContractId);
+
+            // Populate the ViewBag.Plots with the list of plots
+            ViewBag.Plots = new SelectList(_context.Plots, "Id", "Name", contractPlot.PlotId);
+
             return View(contractPlot);
         }
 
         // POST: ContractPlots/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ContractId,PlotId")] ContractPlot contractPlot)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ContractId,PlotId,MonthlyPayment,Price")] ContractPlot contractPlot)
         {
             if (id != contractPlot.Id)
             {
@@ -121,6 +128,7 @@ namespace Agrokultura.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["ContractId"] = new SelectList(_context.Contracts, "Id", "Id", contractPlot.ContractId);
             ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", contractPlot.PlotId);
             return View(contractPlot);
@@ -129,15 +137,16 @@ namespace Agrokultura.Controllers
         // GET: ContractPlots/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.ContractPlots == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var contractPlot = await _context.ContractPlots
-                .Include(c => c.Contract)
-                .Include(c => c.Plot)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(cp => cp.Contract)
+                .Include(cp => cp.Plot)
+                .FirstOrDefaultAsync(cp => cp.Id == id);
+
             if (contractPlot == null)
             {
                 return NotFound();
@@ -151,23 +160,21 @@ namespace Agrokultura.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.ContractPlots == null)
-            {
-                return Problem("Entity set 'AgroContext.ContractPlots'  is null.");
-            }
             var contractPlot = await _context.ContractPlots.FindAsync(id);
-            if (contractPlot != null)
+            if (contractPlot == null)
             {
-                _context.ContractPlots.Remove(contractPlot);
+                return NotFound();
             }
-            
+
+            _context.ContractPlots.Remove(contractPlot);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
         private bool ContractPlotExists(int id)
         {
-          return (_context.ContractPlots?.Any(e => e.Id == id)).GetValueOrDefault();
+            return _context.ContractPlots.Any(cp => cp.Id == id);
         }
     }
 }

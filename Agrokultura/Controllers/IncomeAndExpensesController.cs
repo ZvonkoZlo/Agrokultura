@@ -48,8 +48,8 @@ namespace Agrokultura.Controllers
         // GET: IncomeAndExpenses/Create
         public IActionResult Create()
         {
-            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Id");
-            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id");
+            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Name");
+            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Name");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace Agrokultura.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Id", incomeAndExpense.PlantId);
-            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", incomeAndExpense.PlotId);
+            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Name", incomeAndExpense.PlantId);
+            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Name", incomeAndExpense.PlotId);
             return View(incomeAndExpense);
         }
 
@@ -84,8 +84,8 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Id", incomeAndExpense.PlantId);
-            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", incomeAndExpense.PlotId);
+            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Name", incomeAndExpense.PlantId);
+            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Name", incomeAndExpense.PlotId);
             return View(incomeAndExpense);
         }
 
@@ -121,8 +121,8 @@ namespace Agrokultura.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Id", incomeAndExpense.PlantId);
-            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Id", incomeAndExpense.PlotId);
+            ViewData["PlantId"] = new SelectList(_context.Plants, "Id", "Name", incomeAndExpense.PlantId);
+            ViewData["PlotId"] = new SelectList(_context.Plots, "Id", "Name", incomeAndExpense.PlotId);
             return View(incomeAndExpense);
         }
 

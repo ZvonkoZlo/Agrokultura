@@ -1,0 +1,46 @@
+﻿@model Agrokultura.Models.PlantPassport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Uredite biljku:</h1>
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group form-group-update_create">
+                <label asp-for="CountryOfOrigin" class="control-label">Zemlja podrijetla:</label>
+                <input asp-for="CountryOfOrigin" class="form-control" />
+                <span asp-validation-for="CountryOfOrigin" class="text-danger"></span>
+            </div>
+            <div class="form-group form-group-update_create">
+                <label asp-for="DateOfIssue" class="control-label">Datum izdavanja:</label>
+                <input asp-for="DateOfIssue" class="form-control" />
+                <span asp-validation-for="DateOfIssue" class="text-danger"></span>
+            </div>
+            <div class="form-group form-group-update_create">
+                <label asp-for="IssuingAuthority" class="control-label">Izdavatelj:</label>
+                <input asp-for="IssuingAuthority" class="form-control" />
+                <span asp-validation-for="IssuingAuthority" class="text-danger"></span>
+            </div>
+            <div class="form-group form-group-update_create">
+                <label asp-for="CertificateNumber" class="control-label">Broj certifikata:</label>
+                <input asp-for="CertificateNumber" class="form-control" />
+                <span asp-validation-for="CertificateNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group form-group-update_create">
+                <label asp-for="Description" class="control-label">Opis:</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group submit-update_create me-auto">
+                <input type="submit" value="Uredi!" class="btn" />
+            </div>
+        </form>
+        <div class="btn back-to-list">
+            <a asp-action="Index">Natrag</a>
+        </div>
+    </div>
+</div>

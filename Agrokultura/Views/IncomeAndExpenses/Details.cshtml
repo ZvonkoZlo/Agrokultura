@@ -4,57 +4,66 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>IncomeAndExpense</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfPlants)
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji prihoda i rashoda</h1>
+
+        <dl class="row form-group-update_create">
+        <dt class = "col-sm-4">
+            Količina biljaka:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.AmountOfPlants)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
+        <dt class = "col-sm-4">
+            Cijena:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Price) KM
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOfPlanting)
+        <dt class = "col-sm-4">
+           Datum sadnje:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.DateOfPlanting)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDateOfPlanting)
+        <dt class = "col-sm-4">
+           Datum kraja sadnje:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.EndDateOfPlanting)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfGoods)
+        <dt class = "col-sm-4">
+           Količina dobara:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AmountOfGoods)
+        <dd class = "col-sm-8">
+                @Html.DisplayFor(model => model.AmountOfGoods)  -  @Html.DisplayFor(model => model.Plant.GoodsType.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plant)
+        <dt class = "col-sm-4">
+            Biljka:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plant.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Plant.Name)
+                <a asp-controller="Plants" asp-action="Details" asp-route-id="@Model.Plant.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plot)
+        <dt class = "col-sm-4">
+            Parcela:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plot.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Plot.Name)
+                <a asp-controller="Plots" asp-action="Details" asp-route-id="@Model.Plot.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    <div class="btn edit-data-btn">
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+    </div>
+    <div class="btn back-to-list">
+        <a href="javascript:history.back()">Natrag</a>
+    </div>
+
+    </div>
 </div>

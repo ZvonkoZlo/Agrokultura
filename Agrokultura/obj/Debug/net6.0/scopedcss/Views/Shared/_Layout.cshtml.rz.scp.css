@@ -8,7 +8,7 @@ a.navbar-brand[b-4bavujvt8b] {
 }
 
 a[b-4bavujvt8b] {
-  color: #0077cc;
+  color: white;
 }
 
 .btn-primary[b-4bavujvt8b] {
@@ -18,9 +18,9 @@ a[b-4bavujvt8b] {
 }
 
 .nav-pills .nav-link.active[b-4bavujvt8b], .nav-pills .show > .nav-link[b-4bavujvt8b] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #37512f;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .border-top[b-4bavujvt8b] {

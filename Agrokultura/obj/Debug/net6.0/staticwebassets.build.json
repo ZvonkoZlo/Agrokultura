@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yn0IeqjkwC/us+FxlL4pTr/IMeS+WUHip9fMSroUPjA=",
+  "Hash": "EdN34N85HwL3jbgnO803svgbP8ihRgZ27qwVQf08As0=",
   "Source": "Agrokultura",
   "BasePath": "_content/Agrokultura",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Agrokultura\\wwwroot",
       "Source": "Agrokultura",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Agrokultura.styles.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Agrokultura.styles.css",
       "SourceId": "Agrokultura",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "Agrokultura.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Agrokultura.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Agrokultura.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Agrokultura.bundle.scp.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Agrokultura.bundle.scp.css",
       "SourceId": "Agrokultura",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "Agrokultura.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,132 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Agrokultura.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Agrokultura.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\Agrokultura.styles.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/Agrokultura.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Agrokultura.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\background.jpg",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\create_update.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/create_update.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create_update.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\delete.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/delete.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\delete.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\details.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\details.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\home.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\index.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
+      "BasePath": "_content/Agrokultura",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\css\\site.css",
+      "SourceId": "Agrokultura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\favicon.ico",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\js\\site.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -102,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -119,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -136,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -153,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -170,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -187,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -204,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -221,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -238,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -255,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -272,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -289,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -306,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -323,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -340,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -357,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -374,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -391,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -408,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -425,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -442,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -459,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -476,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -493,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -510,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -527,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -544,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -561,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -578,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -595,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -612,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -629,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -646,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -663,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -680,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -697,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -714,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -731,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -748,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -765,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -782,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -799,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -816,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -833,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -850,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -867,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -884,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -901,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -918,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -935,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -952,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -969,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -986,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1003,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1020,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1037,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1054,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Agrokultura",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\wwwroot\\",
       "BasePath": "_content/Agrokultura",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

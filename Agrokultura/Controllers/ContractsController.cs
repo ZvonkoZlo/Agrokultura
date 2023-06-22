@@ -48,8 +48,8 @@ namespace Agrokultura.Controllers
         // GET: Contracts/Create
         public IActionResult Create()
         {
-            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "Id");
-            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "Id");
+            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "FullName");
+            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "FullName");
             return View();
         }
 
@@ -58,16 +58,16 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,ProviderId,BeneficiaryId,DateOfConclusion,DateOfExpiration")] Contract contract)
+        public async Task<IActionResult> Create([Bind("Id,Name,ProviderId,BeneficiaryId,DateOfConclusion,DateOfExpiration,ContractType")] Contract contract)
         {
-            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "Id", contract.BeneficiaryId);
-            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "Id", contract.ProviderId);
-    
-            
-                _context.Add(contract);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-          
+            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "FullName", contract.BeneficiaryId);
+            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "FullName", contract.ProviderId);
+
+
+            _context.Add(contract);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Contracts/Edit/5
@@ -83,8 +83,12 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "Id", contract.BeneficiaryId);
-            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "Id", contract.ProviderId);
+            ViewBag.BeneficiaryId = new SelectList(_context.People, "Id", "FullName", contract.BeneficiaryId);
+if (contract.ProviderId != null)
+{
+    ViewBag.ProviderId = new SelectList(_context.People, "Id", "FullName", contract.ProviderId);
+}
+
             return View(contract);
         }
 
@@ -93,36 +97,18 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,ProviderId,BeneficiaryId,DateOfConclusion,DateOfExpiration")] Contract contract)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,ProviderId,BeneficiaryId,DateOfConclusion,DateOfExpiration,ContractType")] Contract contract)
         {
             if (id != contract.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(contract);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ContractExists(contract.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["BeneficiaryId"] = new SelectList(_context.People, "Id", "Id", contract.BeneficiaryId);
-            ViewData["ProviderId"] = new SelectList(_context.People, "Id", "Id", contract.ProviderId);
-            return View(contract);
+
+            _context.Update(contract);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Contracts/Delete/5
@@ -159,14 +145,14 @@ namespace Agrokultura.Controllers
             {
                 _context.Contracts.Remove(contract);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ContractExists(int id)
         {
-          return (_context.Contracts?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Contracts?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

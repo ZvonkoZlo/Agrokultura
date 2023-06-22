@@ -3,52 +3,52 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji osobe:</h1>
 
-<h1>Details</h1>
-
-<div>
-    <h4>Person</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
+        <dl class="row form-group-update_create">
+        <dt class = "col-sm-4">
+            Ime i prezime
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.FullName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+        <dt class = "col-sm-4">
+           Broj telefona:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+        <dt class = "col-sm-4">
+            Email:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Adress)
+        <dt class = "col-sm-4">
+           Adresa:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-8">
             @Html.DisplayFor(model => model.Adress)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.City)
+        <dt class = "col-sm-4">
+            Grad:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.City.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.City.Name)
+          <a asp-controller="Cities" asp-action="Details" asp-route-id="@Model.City.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Role)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Role.Id)
-        </dd>
+ 
     </dl>
+
+    <div class="btn edit-data-btn">
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+    </div>
+    <div class="btn back-to-list">
+        <a href="javascript:history.back()">Natrag</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
 </div>
+

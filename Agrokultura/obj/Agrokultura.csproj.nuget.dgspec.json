@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\Agrokultura.csproj": {}
+    "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\Agrokultura.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\Agrokultura.csproj": {
+    "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\Agrokultura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\Agrokultura.csproj",
+        "projectUniqueName": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\Agrokultura.csproj",
         "projectName": "Agrokultura",
-        "projectPath": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\Agrokultura.csproj",
+        "projectPath": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\Agrokultura.csproj",
         "packagesPath": "C:\\Users\\Zvonko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zvonko\\source\\repos\\agriculture\\Agrokultura\\obj\\",
+        "outputPath": "C:\\Users\\Zvonko\\source\\repos\\Agrokultura\\Agrokultura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zvonko\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Aspose.PDF": {
+              "target": "Package",
+              "version": "[23.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"

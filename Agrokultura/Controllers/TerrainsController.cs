@@ -55,7 +55,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,SunPersence,GroundSlope")] Terrain terrain)
+        public async Task<IActionResult> Create([Bind("Id,Name")] Terrain terrain)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,SunPersence,GroundSlope")] Terrain terrain)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Terrain terrain)
         {
             if (id != terrain.Id)
             {

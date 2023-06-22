@@ -49,9 +49,9 @@ namespace Agrokultura.Controllers
         // GET: Plants/Create
         public IActionResult Create()
         {
-            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Id");
-            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "Id");
-            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Id");
+            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Name");
+            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "FullName");
+            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Name");
             return View();
         }
 
@@ -60,7 +60,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,SubspeciesName,AmountOfGoods,Price,PlantTypeId,GoodsTypeId,ManufacturerId")] Plant plant)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,SubspeciesName,AmountOfGoods,Price,PlantTypeId,GoodsTypeId,ManufacturerId,Color")] Plant plant)
         {
             if (ModelState.IsValid)
             {
@@ -68,9 +68,9 @@ namespace Agrokultura.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Id", plant.GoodsTypeId);
-            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "Id", plant.ManufacturerId);
-            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Id", plant.PlantTypeId);
+            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Name", plant.GoodsTypeId);
+            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "FullName", plant.ManufacturerId);
+            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Name", plant.PlantTypeId);
             return View(plant);
         }
 
@@ -87,9 +87,9 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Id", plant.GoodsTypeId);
-            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "Id", plant.ManufacturerId);
-            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Id", plant.PlantTypeId);
+            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Name", plant.GoodsTypeId);
+            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "FullName", plant.ManufacturerId);
+            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Name", plant.PlantTypeId);
             return View(plant);
         }
 
@@ -98,7 +98,7 @@ namespace Agrokultura.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,SubspeciesName,AmountOfGoods,Price,PlantTypeId,GoodsTypeId,ManufacturerId")] Plant plant)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,SubspeciesName,AmountOfGoods,Price,PlantTypeId,GoodsTypeId,ManufacturerId,Color")] Plant plant)
         {
             if (id != plant.Id)
             {
@@ -125,9 +125,9 @@ namespace Agrokultura.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Id", plant.GoodsTypeId);
-            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "Id", plant.ManufacturerId);
-            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Id", plant.PlantTypeId);
+            ViewData["GoodsTypeId"] = new SelectList(_context.GoodsTypes, "Id", "Name", plant.GoodsTypeId);
+            ViewData["ManufacturerId"] = new SelectList(_context.People, "Id", "FullName", plant.ManufacturerId);
+            ViewData["PlantTypeId"] = new SelectList(_context.PlantTypes, "Id", "Name", plant.PlantTypeId);
             return View(plant);
         }
 

@@ -4,39 +4,47 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="table-responsive card card-modify">
+    <div class="index-header">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+        <div class="index-header-title">
+            <h2>Biljke</h2>
+        </div>
+        <div class="index-header-add ">
+            <a asp-action="Create" class="btn add-record mx-1"><i class="fa-solid fa-plus"></i>  Biljka</a>
+        </div>
+        <div class="index-header-add ">
+            <a asp-controller="GoodsTypes" asp-action="Create" class="btn add-record mx-1"><i class="fa-solid fa-plus"></i> Vrsta dobra</a>
+        </div>
+           <div class="index-header-add ">
+            <a asp-controller="PlantTypes" asp-action="Create" class="btn add-record mx-1"><i class="fa-solid fa-plus"></i> Vrsta biljke</a>
+        </div>
+    </div>
+
+    <table class="table table-rounded table-striped table-hover table-modify table-borderless" id="table-cities">
+        <thead class="thead-modify">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Naziv
+            </th>
+
+            <th>
+                Naziv podvrste
+            </th>
+          
+
+            <th>
+                Vrsta dobara
+            </th>
+           
+            <th>
+                Vrsta biljke
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                Cijena
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SubspeciesName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AmountOfGoods)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GoodsType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manufacturer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PlantType)
-            </th>
-            <th></th>
+         
+                <th class="last_td">Info, Uredi, Obriši</th>
         </tr>
     </thead>
     <tbody>
@@ -45,33 +53,59 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.SubspeciesName)
             </td>
+          
             <td>
-                @Html.DisplayFor(modelItem => item.AmountOfGoods)
+                @Html.DisplayFor(modelItem => item.GoodsType.Name)
             </td>
+        
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @Html.DisplayFor(modelItem => item.PlantType.Name)
             </td>
+               <td>
+                @Html.DisplayFor(modelItem => item.Price) KM/(kg/kom)
+            </td>
+    
             <td>
-                @Html.DisplayFor(modelItem => item.GoodsType.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Manufacturer.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PlantType.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-circle-info"></i></a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="icons-modify icons-modify-delete"><i class="fa-solid fa-trash"></i></a>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#table-cities').DataTable({
+            "language": {
+                "sEmptyTable": "Nema dostupnih podataka",
+                "sInfo": "Prikazano _START_ do _END_ od ukupno _TOTAL_ zapisa",
+                "sInfoEmpty": "Prikazano 0 do 0 od 0 zapisa",
+                "sInfoFiltered": "(filtrirano iz ukupno _MAX_ zapisa)",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Prikaži _MENU_ zapisa po stranici",
+                "sLoadingRecords": "Učitavanje...",
+                "sProcessing": "Obrada...",
+                "sSearch": "Pretraga:",
+                "sZeroRecords": "Nema rezultata",
+                "oPaginate": {
+                    "sFirst": "Prva",
+                    "sPrevious": "Prethodna",
+                    "sNext": "Sljedeća",
+                    "sLast": "Posljednja"
+                },
+                "oAria": {
+                    "sSortAscending": ": aktivirajte za sortiranje stupca uzlazno",
+                    "sSortDescending": ": aktivirajte za sortiranje stupca silazno"
+                }
+            }
+        });
+    });
+</script>

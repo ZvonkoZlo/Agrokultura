@@ -4,39 +4,50 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji statusa posla</h1>
 
-<div>
-    <h4>ChorePerson</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+        <dl class="row form-group-update_create m-auto">
+        <dt class = "col-sm-4">
+           Opis
         </dt>
-        <dd class = "col-sm-10">
+            <dd class="col-sm-8 ">
             @Html.DisplayFor(model => model.Description)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Chore)
+            <dt class="col-sm-4 ">
+            Zadatak
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Chore.Id)
+            <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Chore.Name)
+             <a asp-controller="Chores" asp-action="Details" asp-route-id="@Model.Chore.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderStatus)
+            <dt class="col-sm-4">
+            Status narudžbe
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderStatus.Id)
+            <dd class="col-sm-8 ">
+            @Html.DisplayFor(model => model.OrderStatus.Name)
+             <a asp-controller="OrderStatus" asp-action="Details" asp-route-id="@Model.OrderStatus.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Person)
+            <dt class="col-sm-4">
+            Naručitelj
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Person.Id)
+            <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Person.FullName)
+             <a asp-controller="People" asp-action="Details" asp-route-id="@Model.Person.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+        <div class="btn edit-data-btn">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+        </div>
+
+
+        <div class="btn back-to-list">
+            <a href="javascript:history.back()">Natrag</a>
+        </div>
+    </div>
+
 </div>

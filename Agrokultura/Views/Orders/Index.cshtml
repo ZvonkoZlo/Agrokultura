@@ -3,51 +3,96 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="table-responsive card card-modify">
+    <div class="index-header">
+        @Html.ActionLink("Preuzmi PDF", "GenerirajPDF", "Orders")
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+        <div class="index-header-title">
+            <h2>Narudžbe</h2>
+        </div>
+        <div class="index-header-add">
+            <a asp-action="Create" class="btn add-record"><i class="fa-solid fa-plus"></i>  Narudžba</a>
+        </div>
+         <div class="index-header-add ">
+            <a asp-controller="OrderStatus" asp-action="Create" class="btn add-record mx-1"><i class="fa-solid fa-plus"></i> Status narudžbe </a>
+         </div>
+
+    </div>
+
+    <table class="table table-rounded table-striped table-hover table-modify table-borderless" id="table-cities">
+        <thead class="thead-modify">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.AmountOfGoods)
+                 <th>
+                Biljka
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer)
+               Količina dobara
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OrderStatus)
+                Naručitelj
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Plant)
+               Status narudžbe
             </th>
-            <th></th>
+       
+            <th class="last_td">Info, Uredi, Obriši</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AmountOfGoods)
+                        <td>
+                @Html.DisplayFor(modelItem => item.Plant.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Customer.Id)
+                @Html.DisplayFor(modelItem => item.AmountOfGoods) kg/kom
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OrderStatus.Id)
+                @Html.DisplayFor(modelItem => item.Customer.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Plant.Id)
+                @Html.DisplayFor(modelItem => item.OrderStatus.Name)
             </td>
+
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-circle-info"></i></a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="icons-modify"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="icons-modify icons-modify-delete"><i class="fa-solid fa-trash"></i></a>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#table-cities').DataTable({
+            "language": {
+                "sEmptyTable": "Nema dostupnih podataka",
+                "sInfo": "Prikazano _START_ do _END_ od ukupno _TOTAL_ zapisa",
+                "sInfoEmpty": "Prikazano 0 do 0 od 0 zapisa",
+                "sInfoFiltered": "(filtrirano iz ukupno _MAX_ zapisa)",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Prikaži _MENU_ zapisa po stranici",
+                "sLoadingRecords": "Učitavanje...",
+                "sProcessing": "Obrada...",
+                "sSearch": "Pretraga:",
+                "sZeroRecords": "Nema rezultata",
+                "oPaginate": {
+                    "sFirst": "Prva",
+                    "sPrevious": "Prethodna",
+                    "sNext": "Sljedeća",
+                    "sLast": "Posljednja"
+                },
+                "oAria": {
+                    "sSortAscending": ": aktivirajte za sortiranje stupca uzlazno",
+                    "sSortDescending": ": aktivirajte za sortiranje stupca silazno"
+                }
+            }
+        });
+    });
+</script>
+

@@ -17,6 +17,8 @@ public partial class Contract
 
     public string DateOfExpiration { get; set; } = null!;
 
+    public string ContractType { get; set; } = null!;
+
     public virtual Person Beneficiary { get; set; } = null!;
 
     public virtual ICollection<ContractPlot> ContractPlots { get; set; } = new List<ContractPlot>();

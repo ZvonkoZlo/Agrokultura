@@ -4,39 +4,50 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji narudžbe:</h1>
 
-<div>
-    <h4>Order</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfGoods)
+        <dl class="row form-group-update_create">
+        <dt class = "col-sm-4">
+            Biljka
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AmountOfGoods)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Plant.Name)
+                <a asp-controller="Plants" asp-action="Details" asp-route-id="@Model.Plant.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Customer)
+        <dt class = "col-sm-4">
+            Količina:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Customer.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.AmountOfGoods) kg/kom
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderStatus)
+        <dt class = "col-sm-4">
+           Naručitelj:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderStatus.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Customer.FullName)
+                <a asp-controller="People" asp-action="Details" asp-route-id="@Model.Customer.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plant)
+        <dt class = "col-sm-4">
+            Status narudžbe:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plant.Id)
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.OrderStatus.Name)
+                <a asp-controller="OrderStatus" asp-action="Details" asp-route-id="@Model.OrderStatus.Id" class="icons-modify-in-details"><i class="fa-solid fa-circle-info"></i></a>
+
         </dd>
+
     </dl>
+
+        <div class="btn edit-data-btn">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+        </div>
+        <div class="btn back-to-list">
+            <a href="javascript:history.back()">Natrag</a>
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

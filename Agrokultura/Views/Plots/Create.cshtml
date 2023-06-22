@@ -4,59 +4,52 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Plot</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Kreiraj novu parcelu!</h1>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-       @*     <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>*@
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+            <div class="form-group form-group-update_create">
+                <label asp-for="Name" class="control-label">Naziv:</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Coordinates" class="control-label"></label>
-                <input asp-for="Coordinates" class="form-control" />
-                <span asp-validation-for="Coordinates" class="text-danger"></span>
+            <div class="form-group form-group-update_create">
+                <label asp-for="GroundSlope" class="control-label">Nagib tla:</label>
+                <input asp-for="GroundSlope" class="form-control" />
+                <span asp-validation-for="GroundSlope" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Longitudes" class="control-label"></label>
-                <input asp-for="Longitudes" class="form-control" />
-                <span asp-validation-for="Longitudes" class="text-danger"></span>
+            <div class="form-group form-group-update_create">
+                <label asp-for="SunPresence" class="control-label">Sunčeva prisutnost:</label>
+                <input asp-for="SunPresence" class="form-control" />
+                <span asp-validation-for="SunPresence" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Corners" class="control-label"></label>
-                <input asp-for="Corners" class="form-control" />
-                <span asp-validation-for="Corners" class="text-danger"></span>
+            <div class="form-group form-group-update_create">
+                <label asp-for="GroundId" class="control-label">Tlo:</label>
+                <select asp-for="GroundId" class="form-control" asp-items="ViewBag.GroundId"></select>
+                <span asp-validation-for="GroundId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="GroundId" class="control-label"></label>
-                <select asp-for="GroundId" class ="form-control" asp-items="ViewBag.GroundId"></select>
+            <div class="form-group form-group-update_create">
+                <label asp-for="TerrainId" class="control-label">Teren:</label>
+                <select asp-for="TerrainId" class="form-control" asp-items="ViewBag.TerrainId"></select>
+                <span asp-validation-for="TerrainId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TerrainId" class="control-label"></label>
-                <select asp-for="TerrainId" class ="form-control" asp-items="ViewBag.TerrainId"></select>
+            <div class="form-group form-group-update_create">
+                <label asp-for="OwnerId" class="control-label">Vlasnik:</label>
+                <select asp-for="OwnerId" class="form-control" asp-items="ViewBag.OwnerId"></select>
+                <span asp-validation-for="OwnerId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="OwnerId" class="control-label"></label>
-                <select asp-for="OwnerId" class ="form-control" asp-items="ViewBag.OwnerId"></select>
+            <div class="form-group form-group-update_create">
+                <label asp-for="PlotArea" class="control-label">Površina parcele (m^2):</label>
+                <input asp-for="PlotArea" class="form-control" />
+                <span asp-validation-for="PlotArea" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group submit-update_create me-auto">
+                <input type="submit" value="Kreiraj" class="btn" />
             </div>
         </form>
+        <div class="btn back-to-list">
+            <a asp-action="Index">Natrag</a>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

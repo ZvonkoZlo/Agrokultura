@@ -130,12 +130,14 @@ namespace Agrokultura.Migrations
                         .HasColumnName("country_id");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)")
                         .HasColumnName("name");
 
                     b.Property<string>("PostalCode")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
@@ -161,6 +163,13 @@ namespace Agrokultura.Migrations
                     b.Property<int>("BeneficiaryId")
                         .HasColumnType("int")
                         .HasColumnName("beneficiary_id");
+
+                    b.Property<string>("ContractType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("contract_type");
 
                     b.Property<string>("DateOfConclusion")
                         .IsRequired()
@@ -210,9 +219,17 @@ namespace Agrokultura.Migrations
                         .HasColumnType("int")
                         .HasColumnName("contract_id");
 
+                    b.Property<decimal?>("MonthlyPayment")
+                        .HasColumnType("decimal(18,2)")
+                        .HasColumnName("monthly_payment");
+
                     b.Property<int?>("PlotId")
                         .HasColumnType("int")
                         .HasColumnName("plot_id");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("decimal(18,2)")
+                        .HasColumnName("price");
 
                     b.HasKey("Id")
                         .HasName("PK__contract__3213E83F21D8BA34");
@@ -255,12 +272,23 @@ namespace Agrokultura.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("MeasurementUnit")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)")
+                        .HasColumnName("measurement_unit");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)")
                         .HasColumnName("name");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int")
+                        .HasColumnName("quantity");
 
                     b.HasKey("Id")
                         .HasName("PK__goods_ty__3213E83FCF7F9773");
@@ -474,6 +502,12 @@ namespace Agrokultura.Migrations
                         .HasColumnType("float")
                         .HasColumnName("amount_of_goods");
 
+                    b.Property<string>("Color")
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("color");
+
                     b.Property<string>("Description")
                         .HasMaxLength(5000)
                         .IsUnicode(false)
@@ -521,6 +555,49 @@ namespace Agrokultura.Migrations
                     b.ToTable("plant", (string)null);
                 });
 
+            modelBuilder.Entity("Agrokultura.Models.PlantPassport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CertificateNumber")
+                        .HasMaxLength(256)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(256)")
+                        .HasColumnName("certificate_number");
+
+                    b.Property<string>("CountryOfOrigin")
+                        .HasMaxLength(256)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(256)")
+                        .HasColumnName("country_of_origin");
+
+                    b.Property<DateTime>("DateOfIssue")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_of_issue");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(5000)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(5000)")
+                        .HasColumnName("description");
+
+                    b.Property<string>("IssuingAuthority")
+                        .HasMaxLength(256)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(256)")
+                        .HasColumnName("issuing_authority");
+
+                    b.HasKey("Id")
+                        .HasName("PK__plant_passport__3213E83FA4C407E4");
+
+                    b.ToTable("plant_passport", (string)null);
+                });
+
             modelBuilder.Entity("Agrokultura.Models.PlantType", b =>
                 {
                     b.Property<int>("Id")
@@ -559,27 +636,12 @@ namespace Agrokultura.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Coordinates")
-                        .HasMaxLength(256)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(256)")
-                        .HasColumnName("coordinates");
-
-                    b.Property<string>("Corners")
-                        .HasMaxLength(256)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(256)")
-                        .HasColumnName("corners");
-
                     b.Property<int?>("GroundId")
-                        .HasColumnType("int")
-                        .HasColumnName("ground_id");
+                        .HasColumnType("int");
 
-                    b.Property<string>("Longitudes")
-                        .HasMaxLength(256)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(256)")
-                        .HasColumnName("longitudes");
+                    b.Property<int?>("GroundSlope")
+                        .HasColumnType("int")
+                        .HasColumnName("ground_slope");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -591,6 +653,16 @@ namespace Agrokultura.Migrations
                     b.Property<int?>("OwnerId")
                         .HasColumnType("int")
                         .HasColumnName("owner_id");
+
+                    b.Property<int?>("PlotArea")
+                        .HasColumnType("int")
+                        .HasColumnName("plot_area");
+
+                    b.Property<string>("SunPresence")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("sun_presence");
 
                     b.Property<int?>("TerrainId")
                         .HasColumnType("int")
@@ -646,22 +718,12 @@ namespace Agrokultura.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("GroundSlope")
-                        .HasColumnType("int")
-                        .HasColumnName("ground_slope");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)")
                         .HasColumnName("name");
-
-                    b.Property<string>("SunPersence")
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("sun_persence");
 
                     b.HasKey("Id")
                         .HasName("PK__terrain__3213E83F7D46155D");
@@ -736,11 +798,13 @@ namespace Agrokultura.Migrations
                     b.HasOne("Agrokultura.Models.Contract", "Contract")
                         .WithMany("ContractPlots")
                         .HasForeignKey("ContractId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__contract___contr__5DCAEF64");
 
                     b.HasOne("Agrokultura.Models.Plot", "Plot")
                         .WithMany("ContractPlots")
                         .HasForeignKey("PlotId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__contract___plot___5EBF139D");
 
                     b.Navigation("Contract");

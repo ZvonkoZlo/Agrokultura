@@ -49,7 +49,7 @@ namespace Agrokultura.Controllers
         {
             ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name");
             return View();
-        }
+        } 
 
         // POST: Cities/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -78,7 +78,7 @@ namespace Agrokultura.Controllers
             {
                 return NotFound();
             }
-            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Id", city.CountryId);
+            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", city.CountryId);
             return View(city);
         }
 

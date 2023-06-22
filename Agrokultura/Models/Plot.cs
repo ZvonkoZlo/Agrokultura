@@ -8,12 +8,11 @@ public partial class Plot
     public int Id { get; set; }
 
     public string Name { get; set; } = null!;
+    public int? PlotArea { get; set; }
 
-    public string? Coordinates { get; set; }
+    public string? SunPresence { get; set; }
 
-    public string? Longitudes { get; set; }
-
-    public string? Corners { get; set; }
+    public int? GroundSlope { get; set; }
 
     public int? GroundId { get; set; }
 

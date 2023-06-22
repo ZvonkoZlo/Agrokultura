@@ -1,0 +1,51 @@
+﻿@model Agrokultura.Models.PlantPassport
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row row-udpate_create mx-auto">
+    <div class="col-md-6 mx-auto col-update_create">
+        <h1>Detalji putovnice biljke</h1>
+
+        <dl class="row form-group-update_create">
+            <dt class="col-sm-2">
+                    Zemlja podrijetla:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CountryOfOrigin)
+            </dd>
+            <dt class="col-sm-2">
+                Datum izdavanja:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateOfIssue)
+            </dd>
+            <dt class="col-sm-2">
+                Izdavatelj:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IssuingAuthority)
+            </dd>
+            <dt class="col-sm-2">
+                Broj certifikata:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CertificateNumber)
+            </dd>
+            <dt class="col-sm-2">
+                Opis:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+        </dl>
+
+        <div class="btn edit-data-btn">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Uredi</a>
+        </div>
+        <div class="btn back-to-list">
+            <a href="javascript:history.back()">Natrag</a>
+        </div>
+    </div>
+</div>

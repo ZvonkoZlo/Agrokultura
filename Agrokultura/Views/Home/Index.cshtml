@@ -1,8 +1,202 @@
-﻿@{
+﻿@model CombinedViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="hero-img">
+    <div class="hero-text">
+        <div class="container">
+            <h1 class="display-1 text-center pb-5">Agrokultura</h1>
+            <h3 class="display-4 text-center">
+                Aplikacija za upravljanje rada na poljoprivrednim parcelama
+            </h3>
+        </div>
+    </div>
 </div>
+
+<div class="statistika ">
+
+    <div class="row pb-lg-5 mb-4">
+        <div class="col-lg-3 col-6">
+            <div class="small-box kartica mb-3"
+                 style="background-color: #4c7141; color: #ffffff">
+                <div class="inner">
+                    <div class="h2">@ViewBag.TotalIncome</div>
+                    <p>Prihodi</p>
+                </div>
+                <i class="fa-regular fa-money-bill-1 fa-2x ikona"
+                   style="color: #ecda49"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-6">
+            <div class="small-box kartica mb-3"
+                 style="background-color: #4c7141; color: #ffffff">
+                <div class="inner">
+                    <div class="h2">@ViewBag.TotalExpense</div>
+                    <p>Troškovi</p>
+                </div>
+                <i class="fa-regular fa-credit-card fa-2x ikona"
+                   style="color: #ecda49"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-6">
+            <div class="small-box kartica mb-3"
+                 style="background-color: #4c7141; color: #ffffff">
+                <div class="inner">
+                    <div class="h2">@ViewBag.Order</div>
+                    <p>Narudžbe</p>
+                </div>
+                <i class="fa-regular fa-file-lines fa-2x ikona"
+                   style="color: #ecda49"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-6">
+            <div class="small-box kartica mb-3"
+                 style="background-color: #4c7141; color: #ffffff">
+                <div class="inner">
+                    <div class="h2">@ViewBag.People</div>
+                    <p>Zaposleni</p>
+                </div>
+                <i class="fa-regular fa-user fa-2x ikona" style="color: #ecda49"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row pb-lg-5 mb-4">
+        <div class="col-md-6 ">
+
+            <p class="h2 ms-2">Narudžbe</p>
+
+            <table class="table table-rounded table-striped table-hover table-modify table-borderless home-tablica">
+                <thead class="thead-modify">
+
+                    <tr>
+                        <th>
+                            Biljka
+                        </th>
+                        <th>
+                            Količina dobara
+                        </th>
+                        <th>
+                            Naručitelj
+                        </th>
+                        <th>
+                            Status narudžbe
+                        </th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                   @foreach (var item in Model.Orders) {
+        <tr>
+                        <td>
+                @Html.DisplayFor(modelItem => item.Plant.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AmountOfGoods) kg/kom
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderStatus.Name)
+            </td>
+                    </tr>
+                   }
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-md-6 ">
+            <p class="h2 ms-2">Poslovi</p>
+            <table class="table table-rounded table-striped table-hover table-modify table-borderless" id="table-cities">
+                <thead class="thead-modify">
+                    <tr>
+                        <th>
+                            Opis:
+                        </th>
+                        <th>
+                            Zadatak
+                        </th>
+                        <th>
+                            Status posla
+                        </th>
+                        <th>
+                            Izvršitelj
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Chores)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Chore.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderStatus.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Person.FullName)
+                            </td>
+                    </tr>
+}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <p class="h2 ms-2">Detalji po parceli</p>
+
+    <table class="table table-rounded table-striped table-hover table-modify table-borderless home-tablica">
+        <thead class="thead-modify">
+
+            <tr>
+                <th>
+                    Parcela
+                </th>
+                <th>
+                    Prihodi
+                </th>
+                <th>
+                    Troškovi
+                </th>
+                <th>
+                    Zbroj
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.TableData)
+            {
+                <tr>
+                    <td>@item.ParcelName </td>
+                    <td>@item.TotalIncome €</td>
+                    <td>@item.TotalExpense €</td>
+                    <td>@item.TotalBalance €</td>
+                </tr>
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+
+

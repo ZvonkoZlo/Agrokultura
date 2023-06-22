@@ -4,60 +4,64 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<div class="col-update_create">
+    <h1>Izbrisati</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>IncomeAndExpense</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfPlants)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AmountOfPlants)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOfPlanting)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateOfPlanting)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDateOfPlanting)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EndDateOfPlanting)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AmountOfGoods)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AmountOfGoods)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plant)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plant.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plot)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plot.Id)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+    <h3>Jeste li sigurni da želite ovo izbrisati?</h3>
+    <div>
+        <h4>Prihodi i rashodi</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Količina biljaka: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AmountOfPlants)
+            </dd>
+            <dt class="col-sm-2">
+                Cijena: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt class="col-sm-2">
+                Datum sadnje:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateOfPlanting)
+            </dd>
+            <dt class="col-sm-2">
+                Datum završetka sadnje:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EndDateOfPlanting)
+            </dd>
+            <dt class="col-sm-2">
+                Količina robe: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AmountOfGoods)
+            </dd>
+            <dt class="col-sm-2">
+                Biljka: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Plant.Name)
+            </dd>
+            <dt class="col-sm-2">
+                Zemljište: 
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Plot.Name)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <div class="btn back-to-list">
+                <a href="javascript:history.back()">Natrag</a>
+            </div>
+            <input type="submit" value="Izbrisati" class="btn edit-data-btn delete-btn" />
+        </form>
+    </div>
 </div>

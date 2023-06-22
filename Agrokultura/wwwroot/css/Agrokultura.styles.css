@@ -1,0 +1,99 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.nav-costum {
+    height: 60px;
+    background-color: #59854c;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+    position:relative;
+    z-index:100;
+}
+
+.navbar-collapse {
+    width: 100%;
+    background-color: #59854c;
+    opacity: 0.95;
+    transition: 2s;
+}
+
+.expand-button-costum {
+    color: black;
+}
+
+.icon-menu-custom {
+    margin-top: 15px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    border: 1px solid #4c7141;
+    box-shadow: 0 0 0 0;
+}
+
+.dropdown-costum {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-costum a {
+    transition: 0.5s;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ecda49;
+    background-image: linear-gradient(to right,#77b168,#59854c);
+}
+
+.nav-costum a:hover {
+    color: #ecda49;
+    background: #59854c;
+}
+
+.navbar-brand {
+    color: #ecda49;
+    padding: 15px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    transition: 0.5s;
+}
+
+.dropdown-menu {
+    color: #4c7141;
+   
+}
+
+.dropdown-toggle, .nav-item {
+    transition: 3s;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #77b168;
+    background-image: linear-gradient(to right,#77b168,#59854c);
+}
+
+.footer {
+    background-color: #59854c;
+    color: white;
+}
+
+    .footer .container {
+        text-align: center;
+        color: white;
+    }
+
+        .footer .container a {
+            /*text-decoration:none;*/
+            color: #ecda49;
+        }
